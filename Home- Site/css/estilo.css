@@ -9,9 +9,9 @@
 .center{
     display:flex;
     flex-wrap: wrap;
-    max-width: 1280px;
+    max-width: cover;
     margin: 0 auto;
-    padding:0 2%;
+    padding: 0;
 }
 
 
@@ -25,19 +25,13 @@ html, body{
 header{
     height: 200px;
     padding: 20px 0;
+    max-height: 100%;
 }
 .rodape{
     height: 20px;
     width: 100%;
     position: absolute;
     top: 120px;   
-}
-
-.rodape2{
-    position:absolute;
-    bottom: 20px;
-    left: 30%;
-    font-size: 15px;
 }
 
 .logo{
@@ -71,6 +65,11 @@ section.sobre p{
 .texto-sobre button{
     position:absolute;
     bottom: 60px;
+}
+.texto-home h2{
+    margin-top: 8%;
+    font-size: 27px;
+    position: absolute;
 }
 
 .extras{
@@ -134,12 +133,15 @@ section.sobre p{
     height: 10px;
 }
 
-/* CODIGO EMPRESAS TABELAS LUCAS */
+/* CODIGO EMPRESAS  */
+
 .card {
     display: flex;
     width: 340px;
     margin: 2px;
   }
+
+
   main > section {
     margin: 0 20px;
     display: flex;
@@ -147,9 +149,7 @@ section.sobre p{
     justify-content: space-between;
     gap: 20px;
   }
-  .card > div {
-    margin-left: 20px;
-  }
+ 
   .empresas{
     display: flex;
     justify-content: space-between;
@@ -159,3 +159,63 @@ section.sobre p{
     top: 135px;
     left: 150px;
   }
+
+  .copy{
+    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 37%;
+  }
+
+  /*contatos*/
+
+  .card-contatos > div {
+    margin-left: 200px;    
+  }
+
+  .card-contatos {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 2px;
+    left: 30%;
+    top: 22%;
+    box-shadow: 2px 2px 10px black;
+    height: 250px;
+    width: 500px;
+    padding: 5%;
+  }
+  .social-media-contatos {
+    position: absolute;
+    right: 30%;
+    bottom: 5%;
+    margin: 30px;
+ 
+  }
+  .social-media-contatos img{
+    margin:40px;
+  }
+
+  .card-contatos > p span {
+    font-size: 15px;
+  }
+
+  .card-contatos h1{
+    position: absolute;
+    right: 25%;
+    top: 10%;
+  }
+
+  .card-contatos h4{
+    position: absolute;
+    right: 17%;
+    top: 80%;
+  }
+
+  .telefonemao{
+    position: absolute;
+    top: 30%;
+    right:71%;
+  }
+
+
+  
