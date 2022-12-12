@@ -1,0 +1,146 @@
+/* #region IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+/* #endregion IMPORTS */
+
+
+/* #region ROOT */
+:root {
+  --light-background-color: #e8f7f6;
+  --light-login-container-background: rgb(255, 248, 248);
+
+  --light-text-color: #0d0d0e;
+
+  --dark-background-color: #1b1b1d;
+  --dark-text-color: #f2f2fd;
+
+  --light-accent-color: #740429;
+  --dark-accent-color: #f41a63;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #e6e6fa;
+}
+::-webkit-scrollbar-thumb {
+  background: #8158ce;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c0474;
+}
+/* #endregion ROOT */
+
+
+/* #region ESTILOS GERAIS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: var(--light-background-color);
+
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* #endregion ESTILOS GERAIS */
+
+
+/* #region UTILS */
+.login-title-lg {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 12px;
+}
+/* #endregion UTILS */
+
+
+/* #region CONTEÚDO */
+
+main {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.wallpaper-container {
+  width: 0;
+  height: 100%;
+}
+.login-container {
+  width: 100%;
+  background-color: var(--light-background-color);
+  padding: 2rem 1rem;
+}
+
+.login-inner-container {
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--light-login-container-background);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 15px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.login-icon-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-icon-options > .icon-item {
+  margin: 0 .5rem;
+}
+/* #endregion CONTEÚDO */
+
+
+
+/* #region MEDIA QUERIES */
+@media screen and (min-width: 531px) {
+  main#main-container.main-container > div.wallpaper-container {
+    width: 35%;
+    height: 100%;
+  
+    background-color: var(--light-background-color);
+  }
+  
+  main#main-container.main-container > div.wallpaper-container {
+    background-image: url('../assets/login-pattern.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .login-container {
+    background-color: var(--light-background-color);
+    padding: 2rem 1rem;
+  }
+}
+
+
+@media screen and (min-width: 1439px) {
+  
+}
+
+/* #endregion MEDIA QUERIES */
