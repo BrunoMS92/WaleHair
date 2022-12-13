@@ -139,7 +139,7 @@ main {
    position: absolute;
 
    left: 62%;
-   padding: 1em;
+   padding: 3em;
 }
 
 
@@ -226,8 +226,8 @@ main {
 .mobile-animate{
    position: absolute;
 
-   right: 65%;
-   bottom: 15%;
+   right: 30.5%;
+   top: 46%;
    padding: 4em;
 }
 
